@@ -60,6 +60,7 @@ def index_points(points, idx):
     return new_points
 
 
+@torch.jit.script
 def farthest_point_sample(xyz, npoint):
     """
     Input:
